@@ -1,24 +1,36 @@
 .menu {
-    -fx-background-color: #24273b;
+   -fx-background-color: linear-gradient(to bottom, #4D67D8, #9F6ABA);
 }
 
-.button {
-    -fx-background-color: #24273b;
-    -fx-text-fill: gray;
+.btnMenu {
+    -fx-background-color: transparent;
+    -fx-text-fill: #c2c2c2;
 }
 
-.button:hover {
+.btnMenu:hover {
     -fx-text-fill: white;
 }
 
-.button:selected {
+.btnMenu:focused {
+  -fx-border-style: solid;
+      -fx-border-width: 0px 0px 0px 2px;
+      -fx-border-color: white;
+}
+
+
+.btnList {
+     -fx-background-color: transparent;
+      -fx-text-fill: #c2c2c2;
+}
+
+.btnList:hover {
     -fx-text-fill: white;
 }
 
 .txtField {
     -fx-font-size:15.0;
-    -fx-background-color: #24273b;
-    -fx-text-fill: white;
+    -fx-background-color: white;
+    -fx-text-fill: #c2c2c2;
     -fx-border-style: solid;
     -fx-border-width: 2px 2px 2px 2px;
     -fx-border-color: white;
@@ -26,7 +38,7 @@
 
 
 .list-cell{
- -fx-background-color: #24273b;
+ -fx-background-color: transparent;
   -fx-text-fill: gray;
   -fx-font-size:15.0;
 }
@@ -37,7 +49,7 @@
 
 
 .list-cell:filled:selected:focused, .list-cell:filled:selected {
-    -fx-background-color: #24273b;
+    -fx-background-color: transparent;
     -fx-text-fill: white;
 }
 

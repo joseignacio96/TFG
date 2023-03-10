@@ -22,6 +22,7 @@ import javafx.scene.media.MediaPlayer;
 import javafx.scene.paint.Color;
 import javafx.scene.paint.ImagePattern;
 import javafx.scene.shape.Circle;
+import javafx.scene.shape.Rectangle;
 
 
 import java.io.File;
@@ -33,7 +34,7 @@ public class MainController {
     public Button btnPlay;
     public Button btnPause;
     public ImageView coverDies;
-    public Circle circle;
+
 
     private String userDir = System.getProperty("user.dir")+"\\src\\main\\resources\\musica\\helden.mp3";
     public HBox topBar;
@@ -51,9 +52,8 @@ public class MainController {
     public void initialize() {
 
         //crearDirecotrio()
-        Image image = new Image(getClass().getResourceAsStream("/icon/arealitytour_bowie.jpg"));
-        circle.setFill(new ImagePattern(image));
-        listaCanciones.setBackground(new Background(new BackgroundFill(Color.valueOf("#24273B"),null,null)));
+
+        listaCanciones.setBackground(new Background(new BackgroundFill(Color.valueOf("#ff000000"),null,null)));
         listaCanciones.setVisible(false);
         txtFieldLista.setVisible(false);
         txtFieldLista.setManaged(false);
