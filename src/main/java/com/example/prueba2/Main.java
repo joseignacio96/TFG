@@ -1,6 +1,9 @@
 package com.example.prueba2;
 
+import com.example.prueba2.Modelo.Cancion;
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.EventHandler;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -16,12 +19,16 @@ public class Main extends Application {
     private double yOffset = 0;
     public static BorderPane mainScene;
 
+    public static ObservableList<Cancion> listCanciones = FXCollections.observableArrayList();
+
+    public static FXMLLoader saveFxml;
+
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("mainView.fxml"));
         mainScene = fxmlLoader.load();
-        FXMLLoader fxmlLoader1 = new FXMLLoader(getClass().getResource("musica.fxml"));
-        mainScene.setCenter(fxmlLoader1.load());
+        saveFxml = new FXMLLoader(getClass().getResource("musica.fxml"));
+        mainScene.setCenter(saveFxml.load());
         Scene scene = new Scene(mainScene);
         stage.setMinHeight(757);
         stage.setMinWidth(1133);
