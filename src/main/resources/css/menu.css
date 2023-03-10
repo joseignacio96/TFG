@@ -1,0 +1,46 @@
+.menu {
+    -fx-background-color: #24273b;
+}
+
+.button {
+    -fx-background-color: #24273b;
+    -fx-text-fill: gray;
+}
+
+.button:hover {
+    -fx-text-fill: white;
+}
+
+.button:selected {
+    -fx-text-fill: white;
+}
+
+.txtField {
+    -fx-font-size:15.0;
+    -fx-background-color: #24273b;
+    -fx-text-fill: white;
+    -fx-border-style: solid;
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-color: white;
+}
+
+
+.list-cell{
+ -fx-background-color: #24273b;
+  -fx-text-fill: gray;
+  -fx-font-size:15.0;
+}
+
+.list-cell:filled:hover {
+    -fx-text-fill: white;
+}
+
+
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: #24273b;
+    -fx-text-fill: white;
+}
+
+
+
+
